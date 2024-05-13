@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 2px 20px -10px grey;
+  position: relative;
+}
+.card__icon {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  z-index: 1;
+}
+.card__image {
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  width: 2rem;
+}
+.card__image--purple-highlight {
+  border: 2px solid hsl(264, 65.4%, 70.2%);
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  width: 2rem;
+}
+.card__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card__header__heading-text-wrapper h1 {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+.card__header__heading-text-wrapper h2 {
+  font-size: 0.5rem;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-weight: 500;
+}
+.card__header__heading-text-wrapper-light h1 {
+  font-size: 0.7rem;
+  color: hsl(217, 19%, 35%);
+  font-weight: 500;
+}
+.card__header__heading-text-wrapper-light h2 {
+  font-size: 0.5rem;
+  color: hsla(217, 19%, 35%, 0.5);
+  font-weight: 500;
+}
+.card__description {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.card__description--light {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+.card__description--dark {
+  color: hsl(217, 19%, 35%);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+.card__sub-description--light {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 0.75rem;
+  z-index: 2;
+}
+.card__sub-description--dark {
+  font-size: 0.75rem;
+  color: hsla(217, 19%, 35%, 0.7);
+  z-index: 2;
+}
+.card--daniel {
+  background-color: hsl(263, 55%, 52%);
+}
+.card--jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.card--jeanette {
+  background-color: hsl(0, 0%, 100%);
+}
+.card--patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+.card--kira {
+  background: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    margin: 4rem;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .grid-layout .card--daniel {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .grid-layout .card--jonathan {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .grid-layout .card--jeanette {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid-layout .card--patrick {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .grid-layout .card--kira {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
