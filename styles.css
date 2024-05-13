@@ -130,6 +130,9 @@ main {
     grid-template-rows: 1fr 1fr;
     gap: 20px;
   }
+  .grid-layout .card {
+    margin-bottom: 0;
+  }
   .grid-layout .card--daniel {
     grid-column: 1/3;
     grid-row: 1/2;
